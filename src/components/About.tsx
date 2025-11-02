@@ -1,0 +1,81 @@
+import { Code2, Palette, Rocket, Users } from "lucide-react";
+
+const About = () => {
+  const values = [
+    {
+      icon: Code2,
+      title: "Clean Code",
+      description: "Writing maintainable, scalable code that stands the test of time",
+    },
+    {
+      icon: Palette,
+      title: "Beautiful Design",
+      description: "Crafting intuitive interfaces that users love to interact with",
+    },
+    {
+      icon: Rocket,
+      title: "Performance",
+      description: "Building fast, optimized applications for the best user experience",
+    },
+    {
+      icon: Users,
+      title: "Collaboration",
+      description: "Working effectively in teams to deliver exceptional results",
+    },
+  ];
+
+  return (
+    <section id="about" className="py-24 bg-gradient-to-b from-card to-background">
+      <div className="container mx-auto px-6">
+        <div className="max-w-6xl mx-auto">
+          {/* Section header */}
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              About <span className="text-primary">Me</span>
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full" />
+          </div>
+          
+          {/* Bio */}
+          <div className="mb-16 animate-fade-in-up">
+            <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 md:p-12 shadow-card">
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-6">
+                I'm a passionate full-stack developer with a keen eye for design and a love for creating 
+                seamless digital experiences. With expertise in modern web technologies, I transform ideas 
+                into elegant, functional applications.
+              </p>
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+                When I'm not coding, you'll find me exploring new technologies, contributing to open-source 
+                projects, or sharing knowledge with the developer community. I believe in continuous learning 
+                and staying ahead of the curve in this ever-evolving field.
+              </p>
+            </div>
+          </div>
+          
+          {/* Values grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {values.map((value, index) => (
+              <div
+                key={value.title}
+                className="group bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 hover:border-primary/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-glow animate-fade-in"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="mb-4 inline-block p-3 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors duration-300">
+                  <value.icon className="h-8 w-8 text-primary" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-foreground">
+                  {value.title}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  {value.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;
