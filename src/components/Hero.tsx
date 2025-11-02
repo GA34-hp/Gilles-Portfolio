@@ -20,19 +20,18 @@ const Hero = () => {
           {/* Name */}
           <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight">
             <span className="bg-gradient-to-r from-foreground via-primary to-secondary bg-clip-text text-transparent">
-              Your Name
+              DODJI WAFFO GILLES ALAIN
             </span>
           </h1>
           
           {/* Title */}
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-muted-foreground">
-            Full Stack Developer & UI/UX Enthusiast
+            Full Stack Developer & Cybersecurity Enthusiast
           </h2>
           
           {/* Description */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             I craft elegant digital experiences with clean code and beautiful design. 
-            Specialized in building modern web applications that make a difference.
           </p>
           
           {/* CTA Buttons */}
@@ -60,7 +59,7 @@ const Hero = () => {
           {/* Social Links */}
           <div className="flex gap-6 justify-center pt-8">
             <a 
-              href="https://github.com" 
+              href="https://github.com/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors duration-300"
@@ -78,7 +77,7 @@ const Hero = () => {
               <Linkedin className="h-6 w-6" />
             </a>
             <a 
-              href="mailto:your.email@example.com"
+              href="mailto:gillesalainwaffo@gmail.com"
               className="text-muted-foreground hover:text-primary transition-colors duration-300"
               aria-label="Email Contact"
             >
