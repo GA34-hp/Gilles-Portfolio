@@ -5,37 +5,37 @@ import { Badge } from "@/components/ui/badge";
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-featured online shopping platform with cart management, payment integration, and admin dashboard.",
-      image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80",
-      tags: ["React", "Node.js", "MongoDB", "Stripe"],
-      github: "https://github.com",
-      demo: "https://demo.com",
+      title: "Real estate Platform",
+      description: "A  modern platform that connects individuals and real estate professionals.",
+      image: "M4.jpg",
+      tags: ["React", "Node.js", "PostgreSQL", "Tailwind"],
+      github: "https://github.com/SWISS-ECO-CONCEPT",
+      demo: "https://lamaison-frontend-swiss-eco-concept.vercel.app/",
     },
-    {
-      title: "Task Management App",
-      description: "Collaborative project management tool with real-time updates, team chat, and progress tracking.",
-      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
-      tags: ["TypeScript", "React", "Firebase", "Tailwind"],
-      github: "https://github.com",
-      demo: "https://demo.com",
-    },
-    {
-      title: "Weather Dashboard",
-      description: "Interactive weather application with location-based forecasts, detailed metrics, and beautiful visualizations.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800&q=80",
-      tags: ["React", "API Integration", "Charts.js", "CSS"],
-      github: "https://github.com",
-      demo: "https://demo.com",
-    },
-    {
-      title: "Portfolio CMS",
-      description: "Content management system for creatives to showcase their work with customizable themes and layouts.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
-      tags: ["Next.js", "Sanity", "Tailwind", "Vercel"],
-      github: "https://github.com",
-      demo: "https://demo.com",
-    },
+    // {
+    //   title: "Task Management App",
+    //   description: "Collaborative project management tool with real-time updates, team chat, and progress tracking.",
+    //   image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
+    //   tags: ["TypeScript", "React", "Firebase", "Tailwind"],
+    //   github: "https://github.com",
+    //   demo: "https://demo.com",
+    // },
+    // {
+    //   title: "Weather Dashboard",
+    //   description: "Interactive weather application with location-based forecasts, detailed metrics, and beautiful visualizations.",
+    //   image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800&q=80",
+    //   tags: ["React", "API Integration", "Charts.js", "CSS"],
+    //   github: "https://github.com",
+    //   demo: "https://demo.com",
+    // },
+    // {
+    //   title: "Portfolio CMS",
+    //   description: "Content management system for creatives to showcase their work with customizable themes and layouts.",
+    //   image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+    //   tags: ["Next.js", "Sanity", "Tailwind", "Vercel"],
+    //   github: "https://github.com",
+    //   demo: "https://demo.com",
+    // },
   ];
 
   return (

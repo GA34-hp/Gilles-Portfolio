@@ -59,19 +59,19 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "your.email@example.com",
-      href: "mailto:your.email@example.com",
+      value: "gillesalainwaffo@gmail.com",
+      href: "mailto:gillesalainwaffo@gmail.com",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (123) 456-7890",
-      href: "tel:+11234567890",
+      value: "+237 677427140 /+237 655676871",
+      href: "tel:+237677427140",
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Yaoundé, Cameroon",
       href: null,
     },
   ];
@@ -80,17 +80,17 @@ const Contact = () => {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com",
+      href: "https://github.com/GA34-hp",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/gilles-alain-dodji-waffo-096924355/",
     },
     {
       icon: Mail,
       label: "Email",
-      href: "mailto:your.email@example.com",
+      href: "mailto:gillesalainwaffo@gmail.com",
     },
   ];
 

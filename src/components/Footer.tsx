@@ -7,17 +7,17 @@ const Footer = () => {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com",
+      href: "https://github.com/GA34-hp",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/gilles-alain-dodji-waffo-096924355/",
     },
     {
       icon: Mail,
       label: "Email",
-      href: "mailto:your.email@example.com",
+      href: "mailto:gillesalainwaffo@gmail.com",
     },
   ];
 
@@ -47,10 +47,10 @@ const Footer = () => {
           {/* Copyright */}
           <div className="text-center space-y-2">
             <p className="text-muted-foreground flex items-center justify-center gap-2">
-              Made with <Heart className="h-4 w-4 text-primary fill-primary animate-pulse" /> using React & Tailwind CSS
+              Made using React & Tailwind CSS
             </p>
             <p className="text-sm text-muted-foreground">
-              © {currentYear} Your Name. All rights reserved.
+              © {currentYear} Dodji Waffo Gilles Alain. All rights reserved.
             </p>
           </div>
         </div>
