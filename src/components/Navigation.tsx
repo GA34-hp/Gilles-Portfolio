@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { t } from "i18next";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -16,11 +18,11 @@ const Navigation = () => {
   }, []);
 
   const navItems = [
-    { label: "Home", href: "#home" },
-    { label: "About", href: "#about" },
-    { label: "Projects", href: "#projects" },
-    { label: "Skills", href: "#skills" },
-    { label: "Contact", href: "#contact" },
+    { label: t("navigation.home"), href: "#home" },
+    { label: t("navigation.about"), href: "#about" },
+    { label: t("navigation.projects"), href: "#projects" },
+    { label: t("navigation.skills"), href: "#skills" },
+    { label: t("navigation.contact"), href: "#contact" },
   ];
 
   const scrollToSection = (href: string) => {
@@ -50,6 +52,8 @@ const Navigation = () => {
           >
             Portfolio
           </a>
+          <div className="flex md:gap-4 items-center gap-4 ">
+            <LanguageSwitcher />
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
@@ -103,6 +107,7 @@ const Navigation = () => {
             ))}
           </div>
         )}
+      </div>
       </div>
     </nav>
   );
