@@ -1,3 +1,4 @@
+import { t } from "i18next";
 import { Github, Linkedin, Mail, Heart } from "lucide-react";
 
 const Footer = () => {
@@ -47,10 +48,10 @@ const Footer = () => {
           {/* Copyright */}
           <div className="text-center space-y-2">
             <p className="text-muted-foreground flex items-center justify-center gap-2">
-              Made using React & Tailwind CSS
+              {t('footer.description')}
             </p>
             <p className="text-sm text-muted-foreground">
-              © {currentYear} Dodji Waffo Gilles Alain. All rights reserved.
+              {t('footer.copyright', { year: currentYear })}
             </p>
           </div>
         </div>

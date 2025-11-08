@@ -4,8 +4,10 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+  const { t } = useTranslation();
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
@@ -40,8 +42,8 @@ const Contact = () => {
 
     // Success message (in production, this would send the email)
     toast({
-      title: "Message Sent!",
-      description: "Thank you for reaching out. I'll get back to you soon!",
+      title: t('contact.titleMessage'),
+      description: t('contact.successMessage'),
     });
 
     // Reset form
@@ -64,13 +66,13 @@ const Contact = () => {
     },
     {
       icon: Phone,
-      label: "Phone",
+      label: t("contact.phone"),
       value: "+237 677427140 /+237 655676871",
       href: "tel:+237677427140",
     },
     {
       icon: MapPin,
-      label: "Location",
+      label: t("contact.location"),
       value: "Yaoundé, Cameroon",
       href: null,
     },
@@ -101,11 +103,12 @@ const Contact = () => {
           {/* Section header */}
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Get In <span className="text-primary">Touch</span>
+              {/* Get In <span className="text-primary">Touch</span> */}
+              {t('contact.title')}
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full mb-6" />
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Have a project in mind or just want to chat? I'd love to hear from you!
+              {t('contact.description')}
             </p>
           </div>
 
@@ -114,7 +117,7 @@ const Contact = () => {
             <div className="space-y-8 animate-fade-in">
               <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 shadow-card">
                 <h3 className="text-2xl font-semibold mb-6 text-foreground">
-                  Contact Information
+                  {t('contact.contactInformation')}
                 </h3>
                 
                 <div className="space-y-6">
@@ -142,7 +145,7 @@ const Contact = () => {
 
                 {/* Social links */}
                 <div className="mt-8 pt-8 border-t border-border">
-                  <p className="text-sm text-muted-foreground mb-4">Connect with me</p>
+                  <p className="text-sm text-muted-foreground mb-4">{t('contact.connectWithMe')}</p>
                   <div className="flex gap-4">
                     {socialLinks.map((social) => (
                       <a
@@ -167,13 +170,13 @@ const Contact = () => {
                 <div className="space-y-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
-                      Name *
+                      {t('contact.name')} *
                     </label>
                     <Input
                       id="name"
                       name="name"
                       type="text"
-                      placeholder="Your name"
+                      placeholder={t('contact.namePlaceholder')}
                       value={formData.name}
                       onChange={handleChange}
                       required
@@ -183,13 +186,13 @@ const Contact = () => {
 
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-                      Email *
+                      {t('contact.email')} *
                     </label>
                     <Input
                       id="email"
                       name="email"
                       type="email"
-                      placeholder="your.email@example.com"
+                      placeholder={t('contact.emailPlaceholder')}
                       value={formData.email}
                       onChange={handleChange}
                       required
@@ -199,13 +202,13 @@ const Contact = () => {
 
                   <div>
                     <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">
-                      Subject
+                      {t('contact.subject')}
                     </label>
                     <Input
                       id="subject"
                       name="subject"
                       type="text"
-                      placeholder="What's this about?"
+                      placeholder={t('contact.subjectPlaceholder')}
                       value={formData.subject}
                       onChange={handleChange}
                       className="bg-background/50 border-border focus:border-primary transition-colors duration-300"
@@ -214,12 +217,12 @@ const Contact = () => {
 
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                      Message *
+                      {t('contact.message')} *
                     </label>
                     <Textarea
                       id="message"
                       name="message"
-                      placeholder="Tell me about your project or idea..."
+                      placeholder={t('contact.messagePlaceholder')}
                       value={formData.message}
                       onChange={handleChange}
                       required
@@ -234,7 +237,7 @@ const Contact = () => {
                   size="lg"
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-6 rounded-xl shadow-lg hover:shadow-glow transition-all duration-300"
                 >
-                  Send Message
+                  {t('contact.sendButton')}
                   <Send className="ml-2 h-5 w-5" />
                 </Button>
               </form>

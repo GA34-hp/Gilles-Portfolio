@@ -1,26 +1,30 @@
+import { t } from "i18next";
 import { Code2, Palette, Rocket, Users } from "lucide-react";
+import { useTranslation } from 'react-i18next'
 
 const About = () => {
+  const { t } = useTranslation();
+
   const values = [
     {
       icon: Code2,
-      title: "Clean Code",
-      description: "Writing maintainable, scalable code that stands the test of time",
+      title: t('about.categories.code.CleanCode'),
+      description: t('about.categories.code.description'),
     },
     {
       icon: Palette,
-      title: "Beautiful Design",
-      description: "Crafting intuitive interfaces that users love to interact with",
+      title: t('about.categories.Palette.title'),
+      description: t('about.categories.Palette.description'),
     },
     {
       icon: Rocket,
-      title: "Performance",
-      description: "Building fast, optimized applications for the best user experience",
+      title: t('about.categories.Rocket.title'),
+      description: t('about.categories.Rocket.description'),
     },
     {
       icon: Users,
-      title: "Collaboration",
-      description: "Working effectively in teams to deliver exceptional results",
+      title: t('about.categories.Users.title'),
+      description: t('about.categories.Users.description'),
     },
   ];
 
@@ -31,7 +35,9 @@ const About = () => {
           {/* Section header */}
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              About <span className="text-primary">Me</span>
+              {/* About <span className="text-primary">Me</span> */}
+              {t('about.title')}
+              
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full" />
           </div>
@@ -40,14 +46,10 @@ const About = () => {
           <div className="mb-16 animate-fade-in-up">
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 md:p-12 shadow-card">
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-6">
-                I'm a passionate full-stack developer with a keen eye for design and a love for creating 
-                seamless digital experiences. With expertise in modern web technologies, I transform ideas 
-                into elegant, functional applications.
+               {t('about.body1')}
               </p>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                When I'm not coding, you'll find me exploring new technologies, contributing to open-source 
-                projects, or sharing knowledge with the developer community. I believe in continuous learning 
-                and staying ahead of the curve in this ever-evolving field.
+                {t('about.body2')}
               </p>
             </div>
           </div>

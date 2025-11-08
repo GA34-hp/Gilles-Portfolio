@@ -8,56 +8,52 @@ import {
   Cloud,
   Boxes
 } from "lucide-react";
+import { useTranslation } from 'react-i18next'
 
 const Skills = () => {
+  const { t } = useTranslation();
   const skillCategories = [
     {
-      category: "Frontend",
+      category: t('skills.categories.frontend.title'),
       icon: Code2,
       color: "text-primary",
       skills: ["React", "TypeScript", "Next.js", "Tailwind CSS", "HTML5/CSS3"],
     },
     {
-      category: "Backend",
+      category: t('skills.categories.backend.title'),
       icon: Server,
       color: "text-secondary",
       skills: ["Node.js", "Express", "Python", "REST APIs"],
     },
     {
-      category: "Database",
+      category: t('skills.categories.database.title'),
       icon: Database,
       color: "text-primary",
       skills: ["PostgreSQL"],
     },
     {
-      category: "DevOps",
+      category: t('skills.categories.devops.title'),
       icon: Cloud,
       color: "text-secondary",
       skills: ["Docker", "Vercel", "GitHub Actions", "CI/CD"],
     },
     {
-      category: "Design",
+      category: t('skills.categories.design.title'),
       icon: Palette,
       color: "text-primary",
-      skills: ["Figma",  "UI/UX", "Responsive Design", "Accessibility"],
+      skills: ["Figma", "UI/UX", "Responsive Design", "Accessibility"],
     },
     {
-      category: "Tools",
+      category: t('skills.categories.tools.title'),
       icon: GitBranch,
       color: "text-secondary",
       skills: ["Git", "VS Code", "Postman", "Slack"],
     },
-    // {
-    //   category: "Mobile",
-    //   icon: Smartphone,
-    //   color: "text-primary",
-    //   skills: ["React Native", "Expo", "PWA", "Mobile-First", "Responsive"],
-    // },
     {
-      category: "Architecture",
+      category: t('skills.categories.architecture.title'),
       icon: Boxes,
       color: "text-secondary",
-      skills: [ "Clean Code", "Design Patterns", "Testing", "Scrum"],
+      skills: ["Clean Code", "Design Patterns", "Testing", "Scrum"],
     },
   ];
 
@@ -68,11 +64,11 @@ const Skills = () => {
           {/* Section header */}
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Skills & <span className="text-primary">Technologies</span>
+              {t('skills.title')}
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full mb-6" />
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              A comprehensive toolkit for building modern, scalable web applications
+              {t('skills.description')}
             </p>
           </div>
           
@@ -113,7 +109,7 @@ const Skills = () => {
           {/* Additional info */}
           <div className="mt-16 text-center animate-fade-in-up">
             <p className="text-muted-foreground text-lg">
-              Always learning and exploring new technologies to deliver cutting-edge solutions
+              {t('skills.detail')}
             </p>
           </div>
         </div>

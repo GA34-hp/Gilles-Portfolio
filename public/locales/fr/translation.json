@@ -1,0 +1,97 @@
+{
+    "hero": {
+        "greeting": "salut, je suis",
+        "profession": "Un développeur Full-Stack passionné de cybersécurité",
+        "description": "Création d'expériences web fluides avec des technologies modernes.",
+        "contactButton": "Contactez-moi",
+        "viewProjectsButton": "Voir les projets"
+    },
+    "skills": {
+        "title": "Compétences & Technologies",
+        "description": "Une boîte à outils complète pour construire des applications web modernes et évolutives.",
+        "detail": "Toujours en apprentissage et à la découverte de nouvelles technologies pour offrir des solutions de pointe.",
+        "categories": {
+            "frontend": {
+                "title": "Frontend"
+            },
+            "backend": {
+                "title": "Backend"
+            },
+            "database": {
+                "title": "Base de données"
+            },
+            "devops": {
+                "title": "DevOps"
+            },
+            "design": {
+                "title": "Design"
+            },
+            "tools": {
+                "title": "Outils"
+            },
+            "architecture": {
+                "title": "Architecture"
+            }
+        }
+    },
+    "footer": {
+        "description": "Créé avec React & Tailwind CSS",
+        "copyright": "© {{year}} Dodji Waffo Gilles Alain. Tous droits réservés."
+    },
+    "projects": {
+        "title": "Plateforme immobilière",
+        "description": "Une plateforme moderne qui connecte les particuliers et les professionnels de l'immobilier.",
+        "featuredProjects": "Projets présentés",
+        "featuredProjectsDescription": "Une sélection de mes travaux récents mettant en avant différentes technologies et approches de résolution de problèmes.",
+        "liveDemo": "Démo en direct"
+    },
+    "about": {
+        "title": "À propos de moi",
+        "body1": "Je suis un développeur full-stack passionné avec un œil attentif pour le design et un amour pour la création d'expériences numériques fluides. Avec une expertise dans les technologies web modernes, je transforme les idées en applications élégantes et fonctionnelles.",
+        "body2": "Lorsque je ne code pas, vous me trouverez en train d'explorer de nouvelles technologies, de contribuer à des projets open-source ou de partager mes connaissances avec la communauté des développeurs. Je crois en l'apprentissage continu et en le fait de rester à la pointe dans ce domaine en constante évolution.",
+        "categories": {
+            "code": {
+                "CleanCode": "Code propre",
+                "description": "Écrire un code maintenable et évolutif qui résiste à l'épreuve du temps"
+            },
+            "Palette": {
+                "title": "Beau design",
+                "description": "Créer des interfaces intuitives que les utilisateurs aiment utiliser"
+            },
+            "Rocket": {
+                "title": "Performance",
+                "description": "Optimiser les applications pour une vitesse et une réactivité maximales"
+            },
+            "Users": {
+                "title": "Collaboration",
+                "description": "Travailler en étroite collaboration avec les équipes pour obtenir des résultats exceptionnels"
+            }
+        }
+    },
+    "contact": {
+        "title": "Entrer en contact",
+        "description": "Vous avez un projet en tête ou vous voulez simplement discuter ? J'aimerais avoir de vos nouvelles !",
+        "contactInformation": "Informations de contact",
+        "phone": "Téléphone",
+        "location": "Emplacement",
+        "name": "Nom",
+        "email": "Email",
+        "subject": "Sujet",
+        "message": "Message",
+        "namePlaceholder": "Votre nom",
+        "emailPlaceholder": "Votre email",
+        "subjectPlaceholder": "De quoi s'agit-il ?",
+        "messagePlaceholder": "Parlez-moi de votre projet ou de votre idée...",
+        "sendButton": "Envoyer le message",
+        "connectWithMe": "Connectez-vous avec moi",
+        "titleMessage": "Message envoyé !",
+        "successMessage": "Merci de m'avoir contacté ! Je vous répondrai dès que possible."
+    },
+    "navigation": {
+        "home": "Accueil",
+        "about": "À propos",
+        "projects": "Projets",
+        "skills": "Compétences",
+        "contact": "Contact"
+    }
+}

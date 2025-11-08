@@ -1,0 +1,97 @@
+{
+    "hero": {
+        "greeting": " Hi, I'm",
+        "profession": "A Passionate Full-Stack Developer and cybersecurity enthusiast",
+        "description": "Crafting seamless web experiences with modern technologies.",
+        "contactButton": "Contact Me",
+        "viewProjectsButton": "View Projects"
+    },
+    "skills": {
+        "title": "Skills & Technologies",
+        "description": "A comprehensive toolkit for building modern, scalable web applications.",
+        "detail": "Always learning and exploring new technologies to deliver cutting-edge solutions.",
+        "categories": {
+            "frontend": {
+                "title": "Frontend"
+            },
+            "backend": {
+                "title": "Backend"
+            },
+            "database": {
+                "title": "Database"
+            },
+            "devops": {
+                "title": "DevOps"
+            },
+            "design": {
+                "title": "Design"
+            },
+            "tools": {
+                "title": "Tools"
+            },
+            "architecture": {
+                "title": "Architecture"
+            }
+        }
+    },
+    "footer": {
+        "description": " Made using React & Tailwind CSS",
+        "copyright": "© {{year}} Dodji Waffo Gilles Alain. All rights reserved."
+    },
+    "projects": {
+        "title": "Real estate Platform",
+        "description": "A  modern platform that connects individuals and real estate professionals.",
+        "featuredProjects": "Featured Projects",
+        "featuredProjectsDescription": "A selection of my recent work showcasing different technologies and problem-solving approaches.",
+        "liveDemo": "Live Demo"
+    },
+    "about": {
+        "title": "About Me",
+        "body1": "I'm a passionate full-stack developer with a keen eye for design and a love for creating seamless digital experiences. With expertise in modern web technologies, I transform ideas into elegant, functional applications.",
+        "body2": "  When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community. I believe in continuous learning and staying ahead of the curve in this ever-evolving field.",
+        "categories": {
+            "code": {
+                "CleanCode": "Clean Code",
+                "description": "Writing maintainable, scalable code that stands the test of time"
+            },
+            "Palette": {
+                "title": "Beautiful Design",
+                "description": "Crafting intuitive interfaces that users love to interact with"
+            },
+            "Rocket": {
+                "title": "Performance",
+                "description": "Building fast, optimized applications for the best user experience"
+            },
+            "Users": {
+                "title": "Collaboration",
+                "description": "Working closely with teams to deliver outstanding results"
+            }
+        }
+    },
+    "contact": {
+        "title": "Get In Touch",
+        "description": "Have a project in mind or just want to chat? I'd love to hear from you!",
+        "contactInformation": "Contact Information",
+        "phone": "Phone",
+        "location": "Location",
+        "name": "Name",
+        "email": "Email",
+        "subject": "Subject",
+        "message": "Message",
+        "namePlaceholder": "Your Name",
+        "emailPlaceholder": "your.email@example.com",
+        "subjectPlaceholder": "What's this about?",
+        "messagePlaceholder": "Tell me about your project or idea...",
+        "sendButton": "Send Message",
+        "connectWithMe": "Connect with Me",
+        "titleMessage": "Message Sent!",
+        "successMessage": "Thank you for reaching out! I'll get back to you soon."
+    },
+    "navigation" : {
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects",
+        "skills": "Skills",
+        "contact": "Contact"
+    }
+}

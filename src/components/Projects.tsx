@@ -1,12 +1,14 @@
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { useTranslation } from 'react-i18next';
 
 const Projects = () => {
+  const { t } = useTranslation();
   const projects = [
     {
-      title: "Real estate Platform",
-      description: "A  modern platform that connects individuals and real estate professionals.",
+      title: t('projects.title'),
+      description: t('projects.description'),
       image: "M4.jpg",
       tags: ["React", "Node.js", "PostgreSQL", "Tailwind"],
       github: "https://github.com/SWISS-ECO-CONCEPT",
@@ -45,11 +47,12 @@ const Projects = () => {
           {/* Section header */}
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Featured <span className="text-primary">Projects</span>
+              {t('projects.featuredProjects')}
+              {/* Featured <span className="text-primary">Projects</span> */}
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full mb-6" />
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              A selection of my recent work showcasing different technologies and problem-solving approaches
+              {t('projects.featuredProjectsDescription')}
             </p>
           </div>
           
@@ -114,7 +117,7 @@ const Projects = () => {
                     >
                       <a href={project.demo} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="mr-2 h-4 w-4" />
-                        Live Demo
+                        {t('projects.liveDemo')}
                       </a>
                     </Button>
                   </div>
