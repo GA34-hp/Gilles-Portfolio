@@ -1,4 +1,3 @@
-import { t } from "i18next";
 import { Code2, Palette, Rocket, Users } from "lucide-react";
 import { useTranslation } from 'react-i18next'
 
@@ -30,7 +29,7 @@ const About = () => {
 
   return (
     <section id="about" className="py-24 bg-gradient-to-b from-card to-background">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section header */}
           <div className="text-center mb-16 animate-fade-in">

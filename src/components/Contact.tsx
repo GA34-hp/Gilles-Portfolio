@@ -98,7 +98,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="py-24 bg-gradient-to-b from-background to-card">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section header */}
           <div className="text-center mb-16 animate-fade-in">
@@ -131,12 +131,12 @@ const Contact = () => {
                         {info.href ? (
                           <a
                             href={info.href}
-                            className="text-foreground hover:text-primary transition-colors duration-300 font-medium"
+                            className="text-foreground hover:text-primary transition-colors duration-300 font-medium break-words"
                           >
                             {info.value}
                           </a>
                         ) : (
-                          <p className="text-foreground font-medium">{info.value}</p>
+                          <p className="text-foreground font-medium break-words">{info.value}</p>
                         )}
                       </div>
                     </div>

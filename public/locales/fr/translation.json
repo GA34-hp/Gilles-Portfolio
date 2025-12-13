@@ -40,10 +40,12 @@
     },
     "projects": {
         "title": "Plateforme immobilière",
-        "description": "Une plateforme moderne qui connecte les particuliers et les professionnels de l'immobilier.",
+        "description": "Une Application web moderne qui connecte les particuliers et les professionnels de l'immobilier.",
         "featuredProjects": "Projets présentés",
         "featuredProjectsDescription": "Une sélection de mes travaux récents mettant en avant différentes technologies et approches de résolution de problèmes.",
-        "liveDemo": "Démo en direct"
+        "liveDemo": "Démo en direct",
+        "title2": "plateforme de gestion centralisée des contentieux juridiques",
+        "description2": "Une Application web de gestion intelligente des contentieux juridiques, conçue pour les institutions ou entreprises ayant à suivre plusieurs dossiers à travers différents niveaux juridictionnels au Cameroun."
     },
     "about": {
         "title": "À propos de moi",

@@ -14,14 +14,14 @@ const Projects = () => {
       github: "https://github.com/SWISS-ECO-CONCEPT",
       demo: "https://lamaison-frontend-swiss-eco-concept.vercel.app/",
     },
-    // {
-    //   title: "Task Management App",
-    //   description: "Collaborative project management tool with real-time updates, team chat, and progress tracking.",
-    //   image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
-    //   tags: ["TypeScript", "React", "Firebase", "Tailwind"],
-    //   github: "https://github.com",
-    //   demo: "https://demo.com",
-    // },
+    {
+      title: t('projects.title2'),
+      description: t('projects.description2'),
+      image: "M3.jpg",
+      tags: ["TypeScript", "React", "Firebase", "Tailwind"],
+      // github: "https://github.com",
+      demo: "https://demo.com",
+    },
     // {
     //   title: "Weather Dashboard",
     //   description: "Interactive weather application with location-based forecasts, detailed metrics, and beautiful visualizations.",
@@ -42,7 +42,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className="py-24 bg-gradient-to-b from-background to-card">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           {/* Section header */}
           <div className="text-center mb-16 animate-fade-in">

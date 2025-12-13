@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-card" />
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-96 bg-gradient-radial opacity-50 animate-glow-pulse" style={{ background: 'var(--gradient-radial)' }} />
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
           {/* Greeting */}
           <div className="inline-block">
@@ -21,7 +21,7 @@ const Hero = () => {
           </div>
 
           {/* Name */}
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight">
+          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-tight break-words">
             <span className="bg-gradient-to-r from-foreground via-primary to-secondary bg-clip-text text-transparent">
               DODJI WAFFO GILLES ALAIN
             </span>
