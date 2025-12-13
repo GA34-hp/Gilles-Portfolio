@@ -43,7 +43,9 @@
         "description": "A  modern platform that connects individuals and real estate professionals.",
         "featuredProjects": "Featured Projects",
         "featuredProjectsDescription": "A selection of my recent work showcasing different technologies and problem-solving approaches.",
-        "liveDemo": "Live Demo"
+        "liveDemo": "Live Demo",
+        "title2": "A centralized legal dispute management platform",
+        "description2": "A Web application for intelligent dispute management, designed for institutions or companies to follow multiple files across different jurisdictional levels in Cameroon."
     },
     "about": {
         "title": "About Me",

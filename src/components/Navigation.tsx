@@ -2,9 +2,10 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import LanguageSwitcher from "./LanguageSwitcher";
-import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 
 const Navigation = () => {
+  const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -15,6 +16,15 @@ const Navigation = () => {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const mql = window.matchMedia("(min-width: 768px)");
+    const onChange = () => {
+      if (mql.matches) setIsMobileMenuOpen(false);
+    };
+    mql.addEventListener("change", onChange);
+    return () => mql.removeEventListener("change", onChange);
   }, []);
 
   const navItems = [
@@ -39,7 +49,7 @@ const Navigation = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6 relative">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a
@@ -87,11 +97,14 @@ const Navigation = () => {
               <Menu className="h-6 w-6" />
             )}
           </Button>
+          </div>
         </div>
+      </div>
 
-        {/* Mobile Navigation */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden py-6 space-y-4 border-t border-border animate-fade-in">
+      {/* Mobile Navigation */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden fixed inset-x-0 top-20 bg-background/95 backdrop-blur-lg border-t border-border shadow-lg animate-fade-in z-40">
+          <div className="py-6 px-6 space-y-4 max-h-[calc(100vh-5rem)] overflow-y-auto">
             {navItems.map((item) => (
               <a
                 key={item.label}
@@ -106,9 +119,8 @@ const Navigation = () => {
               </a>
             ))}
           </div>
-        )}
-      </div>
-      </div>
+        </div>
+      )}
     </nav>
   );
 };

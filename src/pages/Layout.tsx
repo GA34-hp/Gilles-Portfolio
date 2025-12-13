@@ -6,7 +6,7 @@ import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
-const Index = () => {
+const Layout = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navigation />
@@ -22,4 +22,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Layout;

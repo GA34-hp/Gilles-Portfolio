@@ -59,7 +59,7 @@ const Skills = () => {
 
   return (
     <section id="skills" className="py-24 bg-gradient-to-b from-card to-background">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           {/* Section header */}
           <div className="text-center mb-16 animate-fade-in">
