@@ -11,7 +11,6 @@ const Projects = () => {
       description: t('projects.description'),
       image: "M4.jpg",
       tags: ["React", "Node.js", "PostgreSQL", "Tailwind"],
-      github: "https://github.com/SWISS-ECO-CONCEPT",
       demo: "https://lamaison-frontend-swiss-eco-concept.vercel.app/",
     },
     {
@@ -19,17 +18,15 @@ const Projects = () => {
       description: t('projects.description2'),
       image: "M3.jpg",
       tags: ["TypeScript", "React", "Firebase", "Tailwind"],
-      // github: "https://github.com",
       demo: "https://demo.com",
     },
-    // {
-    //   title: "Weather Dashboard",
-    //   description: "Interactive weather application with location-based forecasts, detailed metrics, and beautiful visualizations.",
-    //   image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800&q=80",
-    //   tags: ["React", "API Integration", "Charts.js", "CSS"],
-    //   github: "https://github.com",
-    //   demo: "https://demo.com",
-    // },
+    {
+      title: t('projects.title3'),
+      description: t('projects.description3'),
+      image: "logo.png",
+      tags: ["React", "Tailwind"],
+      demo: "https://mfy-website.netlify.app/",
+    },
     // {
     //   title: "Portfolio CMS",
     //   description: "Content management system for creatives to showcase their work with customizable themes and layouts.",
@@ -105,10 +102,10 @@ const Projects = () => {
                       className="flex-1 border-primary/30 hover:border-primary hover:bg-primary/10"
                       asChild
                     >
-                      <a href={project.github} target="_blank" rel="noopener noreferrer">
+                      {/* <a href={project.github} target="_blank" rel="noopener noreferrer">
                         <Github className="mr-2 h-4 w-4" />
                         Code
-                      </a>
+                      </a> */}
                     </Button>
                     <Button
                       size="sm"

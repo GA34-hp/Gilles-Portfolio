@@ -45,7 +45,9 @@
         "featuredProjectsDescription": "A selection of my recent work showcasing different technologies and problem-solving approaches.",
         "liveDemo": "Live Demo",
         "title2": "A centralized legal dispute management platform",
-        "description2": "A Web application for intelligent dispute management, designed for institutions or companies to follow multiple files across different jurisdictional levels in Cameroon."
+        "description2": "A Web application for intelligent dispute management, designed for institutions or companies to follow multiple files across different jurisdictional levels in Cameroon.",
+        "title3": "Website for an event management company",
+        "description3": "Website for an event management company which centralizes all informations related to it's events"
     },
     "about": {
         "title": "About Me",

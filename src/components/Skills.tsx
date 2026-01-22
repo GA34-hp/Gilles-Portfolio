@@ -29,7 +29,7 @@ const Skills = () => {
       category: t('skills.categories.database.title'),
       icon: Database,
       color: "text-primary",
-      skills: ["PostgreSQL"],
+      skills: ["PostgreSQL", "MariaDB"],
     },
     {
       category: t('skills.categories.devops.title'),
