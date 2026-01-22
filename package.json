@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "node dist/server.js",
     "dev": "vite",
     "server": "tsx server.ts",
     "dev:full": "concurrently \"npm run server\" \"npm run dev\"",
