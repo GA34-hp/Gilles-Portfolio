@@ -5,10 +5,13 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { useTranslation } from 'react-i18next';
+import { sendEmail } from '@/services/emailService';
+
 
 const Contact = () => {
   const { t } = useTranslation();
   const { toast } = useToast();
+  const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -16,7 +19,7 @@ const Contact = () => {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     // Basic validation
@@ -40,14 +43,35 @@ const Contact = () => {
       return;
     }
 
-    // Success message (in production, this would send the email)
-    toast({
-      title: t('contact.titleMessage'),
-      description: t('contact.successMessage'),
-    });
+    setIsLoading(true);
 
-    // Reset form
-    setFormData({ name: "", email: "", subject: "", message: "" });
+    try {
+      const result = await sendEmail(formData);
+
+      if (result.success) {
+        toast({
+          title: t('contact.titleMessage'),
+          description: t('contact.successMessage'),
+        });
+        // Reset form
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      } else {
+        toast({
+          title: "Error",
+          description: result.message || "Failed to send message. Please try again.",
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      console.error('Error sending email:', error);
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again later.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -235,10 +259,20 @@ const Contact = () => {
                 <Button
                   type="submit"
                   size="lg"
+                  disabled={isLoading}
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-6 rounded-xl shadow-lg hover:shadow-glow transition-all duration-300"
                 >
-                  {t('contact.sendButton')}
-                  <Send className="ml-2 h-5 w-5" />
+                  {isLoading ? (
+                    <>
+                      <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-current mr-2"></div>
+                      Sending...
+                    </>
+                  ) : (
+                    <>
+                      {t('contact.sendButton')}
+                      <Send className="ml-2 h-5 w-5" />
+                    </>
+                  )}
                 </Button>
               </form>
             </div>
